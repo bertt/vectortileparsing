@@ -12,6 +12,9 @@ using Windows.UI.Xaml.Controls;
 
 namespace App16
 {
+    // --------------------------------------------------------------------------------------------
+    // Code copied from https://github.com/bertt/mapbox-vector-tile-cs/files/782466/TestCode.txt
+    // --------------------------------------------------------------------------------------------
     public class Fetcher
     {
         private Stream _vectorTileStream;
@@ -24,7 +27,7 @@ namespace App16
         {
             try
             {
-                VectorTileParser.Parse(_vectorTileStream);
+                var l = VectorTileParser.Parse(_vectorTileStream);
             }
             catch (Exception ex)
             {
